@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Flagship Events</title>
+		<meta name="description" content="A triple view diagonal slideshow with content preview." />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="/finallogo.png">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+		</script>
+    </head>
+    <style>
+     /* Page Loader */
+    
+     @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+#loader{
+position: fixed;
+z-index: 200000;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+background: #030321;
+font-family: Arial;
+/* background: #fff; */
+display: flex;
+justify-content: center;
+align-content: flex-end;
+
+font-weight: 800;
+}
+html, body{
+overflow-y:hidden !important;
+height: 100%;
+
+}
+
+
+#loader svg {
+font: 10.5em 'Montserrat';
+width: 960px;
+height: 250px;
+margin: 0 auto;
+margin-top:30vh;
+}
+
+.text-copy {
+fill: none;
+stroke: white;
+stroke-dasharray: 6% 29%;
+stroke-width: 5px;
+stroke-dashoffset: 0%;
+animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #4D163D;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: #840037;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #BD0034;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: #BD0034;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: #FDB731;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+    </style>
+    <script>
+            window.onload = function(){ document.getElementById("loader").style.display = "none"; }
+    </script>
+	<body>
+
+            <div id="loader">
+                    <svg viewBox="0 0 960 300">
+                      <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">TNM20</text>
+                      </symbol>
+                    
+                      <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                      </g>
+                    </svg>
+                    <!-- <h2 style="color: aliceblue;">Relive The Reminiscence</h2> -->
+                  </div>
+
+
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+				<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+			</symbol>
+			<symbol id="icon-longarrow" viewBox="0 0 54 24">
+				<title>longarrow</title>
+				<path d="M.42 11.158L12.38.256c.333-.27.696-.322 1.09-.155.395.166.593.467.593.903v6.977h38.87c.29 0 .53.093.716.28.187.187.28.426.28.716v5.98c0 .29-.093.53-.28.716a.971.971 0 0 1-.716.28h-38.87v6.977c0 .416-.199.717-.592.903-.395.167-.759.104-1.09-.186L.42 12.62a1.018 1.018 0 0 1 0-1.462z" />
+			</symbol>
+			<symbol id="icon-navarrow" viewBox="0 0 408 408">
+				<title>navarrow</title>
+				<polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
+			</symbol>
+		</svg>
+		<main>
+			<div class="frame">
+				<header class="codrops-header">
+					<header class="codrops-header">
+                        <img style="width:144px;" src="img/Asset 8@4x-8.png">
+                        <div class="codrops-links">
+                            <a class="github" href="../index.html"><svg class="icon icon--arrow">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>Back</a>
+                            <!--<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/SlideOutBoxMenu/" title="Previous Demo">
+                                <svg class="icon icon--arrow">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                            <a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=35765" title="Back to the article">
+                                <svg class="icon icon--drop">
+                                    <use xlink:href="#icon-drop"></use>
+                                </svg>
+                            </a>-->
+                        </div>
+                    </header>
+				</header>
+			</div>
+			<div class="slideshow">
+				<div class="slideshow__deco"></div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/battle.jpeg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">BATTLE OF BANDS</h3>
+						<h4 class="slide__subtitle">The Music Event</h4>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/runthroug.jpg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">RUNTHROUGH</h3>
+						<h4 class="slide__subtitle">The Drama Event</h4>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/haute.jpeg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">HAUTE COUTURE</h3>
+						<h4 class="slide__subtitle">The Fashion Extravaganza</h4>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/voice.jpg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">VOICE OF MRIDANG</h3>
+						<h4 class="slide__subtitle">The Music Event</h4>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/open.jpg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">OPEN MIC EVENT</h3>
+						<h4 class="slide__subtitle">The Literary Event</h4>
+					</div>
+                </div>
+                <div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/footloose.jpg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">FOOTLOOSE</h3>
+						<h4 class="slide__subtitle"></h4>
+					</div>
+                </div>
+                <div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/mait.jpg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">MAIT GOT TALENT</h3>
+						<h4 class="slide__subtitle"></h4>
+					</div>
+                </div>
+                <div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/mr.jpeg);"></div>
+					</div>
+					<div class="slide__side"></div>
+					<div class="slide__title-wrap">
+						<span class="slide__number"></span>
+						<h3 class="slide__title">MR AND MISS MRIDANG</h3>
+						<h4 class="slide__subtitle"></h4>
+					</div>
+				</div>
+				<button class="nav nav--prev dir"  >
+					<svg class="icon icon--navarrow-prev">
+						<use xlink:href="#icon-navarrow"></use>
+					</svg>
+				</button>
+				<button class="nav nav--next dir">
+					<svg class="icon icon--navarrow-next">
+						<use xlink:href="#icon-navarrow"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="content">
+				<div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Battle of Bands</h3>
+					<h4 class="content__subtitle">The Music Event</h4>
+		            <div class="content__text">Ever played a 7 by 11 on 7/11 at 7:11 outside a 7-11?
+                        Well if you understood that, you are not new to the world of music, and that's exactly what we're looking for. If the chords of your soul can rock and roll, and your band can make the audience head bang - then you wouldn't want to miss out on this.<a class="button" onclick="tas()">Learn More</a></div>
+			
+            <div class="overlay" id="tas" onclick="off()"><br><br>
+                
+                <p style="text-align:center;"><u>EVENT GUIDLINES</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;"  id="ordered">
+                    <li>There will be a preliminary online round, entries of which will be accepted via YouTube/Google Drive links.</li><br>
+                    <li>A total time limit of 15 mins per band will be allotted, including the sound check.</li><br>
+                    <li>Using any pre-recorded piece of music is strictly prohibited.</li><br>
+                    <li>Only a standard acoustic drum kit will be provided, including the mics.</li><br>
+                </ol>
+                <p style="text-align:center;"><u>JUDGING CRIETERIA</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Slots will be awarded on first come first serve basis.</li><br>
+                    <li>Use of inappropriate/abusive words is prohibited.</li><br>
+                    <li>Original composition will fetch you extra marks.</li><br>
+                    <li>Teams will be judged upon their composition, co-ordination, fun factor, and stage presence.</li><br>
+                    <li>Marks will be deducted on exceeding time limit.</li><br>
+                    <li>Decision of judges at both the rounds will be final and binding.</li><br>
+                </ol>
+                <p style="text-align:center;"><u>For Queries Contact</u></p>
+                <ul style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Vinayak: 9899552696</li><br>
+                    <li>Aman: 80765 68174</li><br>
+                   
+                </ul>
+        </div>
+
+
+				</div>
+				<div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Run Through</h3>
+					<h4 class="content__subtitle">Drama Event</h4>
+					<div class="content__text">Runthrough is the Annual Street Play event organized by Aayaam-The Dramatics Society of MAIT. Teams from all over the Delhi Collegiate 
+                        
+                        Theatre Circuit participate in it. It is a platform where talented theater enthusiasts showcase their talent and get their voices heard
+                         on various social awareness topics, ranging from, Drug Abuse to Environmental Pollution. Towards the end of the final round, 
+                         Aayaam releases its Mashup of the Year, which is amalgamation of songs composed by the teams during that specific
+                          year<a class="button" onclick="tas()">Learn More</a></div>
+			<div class="overlay" id="tas" onclick="off()"><br><br>
+                <p style="text-align:center;"><u>EVENT GUIDLINES</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;"  id="ordered">
+                    <li>There is a preliminary round in which every team has to perform.</li><br>
+                    <li>After the preliminary round, 12 teams are shortlisted for the final round.</li><br>
+                    <li>The time limit of each team will be 25 minutes. The total time will be from empty stage to empty stage.</li><br>
+                    <li>There are 3 podium positions, an award for best music and people's choice award.</li><br>
+                    <li>There is no team limit and time limit, both for the preliminary round and the final round.</li><br>
+
+                </ol>
+                <p style="text-align:center;"><u>EVENT RULES</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Use of electronic equipment is not allowed. </li><br>
+                    <li>There should be no use of derogatory or obscene language targeting any community, gender or religion.</li><br>  
+                    <li>Teams must bring their own props.</li><br> 
+                    <li>Judge's decisions will be final and abiding.</li><br> 
+                </ol>
+                <p style="text-align:center;"><u>JUDGING CRIETERIA</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Use of props</li><br>
+                    <li>Voice</li><br>  
+                    <li>Music</li><br> 
+                    <li>Justice to Topic</li><br> 
+                    <li>Script</li><br> 
+                    <li>Energy</li><br> 
+                    <li>Acting</li><br> 
+                </ol>
+        </div>
+
+
+				</div>
+				<div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Haute Couture</h3>
+					<h4 class="content__subtitle">The Fashion Extravaganza</h4>
+					<div class="content__text">Fashion is not necessarily being attractive, but how well you portray your character. Both Style and Fashion are silhouette of society 
+                        Fashion is the way of feeling beautiful in one's own skin. Appearances can be deceptive but attitude remains. Keyara , Fashion society of MAHARAJA AGARSAIN INSTITUTE OF TECHNOLOGY, presents in association with Techsurge and Mridang it's extravagant and exuberant Fashion show competition~HAUTE COUTURE 2020
+                       
+                       Exciting vouchers and prize money for winners is waiting
+                       <a class="button" onclick="tas()">Learn More</a></div>
+			    <!-- <div class="overlay" id="tas" onclick="off()"><br><br>
+                    <p style="text-align:center;"><u>EVENT GUIDLINES</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;"  id="ordered">
+                    <li>One entry per college.</li><br>
+                    <li>It is a team event. A team can have 15-18 members. (Including participants, choreographer and coordinator).</li><br>
+                    <li>The time limit for each team performance is 15 minutes , if the performance further exceeds the it may lead to point deduction or disqualification.</li><br>
+                    <li>Time limit for every team would be 15 minutes (Including setup and the performance both).</li><br>
+                    <li>Negative marking if participants exceed time limit.</li><br>
+                    <li>Theme selection is open to the team.</li><br>
+                    <li>>A green room would be provided for the changing purpose.</li><br>
+                    <li>Should carry their tracks in pendrive Or Aux.</li><br>
+                    <li>Vulgarity is strongly prohibited. Any form of obscenity will lead to debarring the team from the contest.</li><br>
+                    <li>Use of cigarettes, alcohol and any unfair means is strongly prohibited.</li><br>
+                </ol>
+                <p style="text-align:center;"><u>JUDGING CRIETERIA</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Teams will be judged on costumes, theme, walking stance and attitude. Decision of the judges will be final and binding.</li><br>
+
+                </ol>
+                </div> -->
+
+
+				</div>
+				<div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Voice Of Mridang</h3>
+					<h4 class="content__subtitle">The Music Event</h4>
+					<div class="content__text">Incendiary Is India's Oldest And The Most Prestigious Rock Band Competition. With Prizes Worth  Lacs Of Rupees And Your Prestige At Stake, Incendiary Has Been The Launch Pad For Many Contemporary Bands Including Syndrome, Vertigo And Many More.
+                            College Bands battling for recognition and the thrill to perform in front of a live audience. Great competition, Greater effort. </div>
+					<a class="button" onclick="tas()">Learn More</a>
+			<!-- <div class="overlay" id="tas" onclick="off()"><br><br>
+                <p style="text-align:center;"><u>EVENT GUIDLINES</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;"  id="ordered">
+                    <li>This is a western rock band competition, open to any college or semi-professional band in India.</li><br>
+                    <li>After the registration a list of bands will be released who will be performing at the main evet in IIIT Allahabad </li><br>
+                    <li>The Main event at IIIT Allahabad will consist if rounds: pre-finals and finals</li><br>
+                    <li>In pre finals at IIIT Allahabad , a group have to perform two numbers of their choicce and one number of the judges choice within 20 minutes</li><br>
+                    <li>In finals , a group will be required to perform in a time of 15+20 minutes(Amps on to amps off inclusive of the sound check). Of the 15 minutes maximum shall be given to the setup and 20 minutes maximum for the performance. Failure in adherence will lead to the disqualification. Bands will be banned from performing in all subsequent edition of the effervescence disqualified on the spot for the misconduct, obscenity or foul language and</li><br>
+                    <li>Marks will be deducted for the exceeding time limit</li><br>
+                    <li>Equipments provided will be: One bass amplifier speaker, One lead amplifier speaker, adequate microphones, drum set ( You can bring along with your own cymbals and chokes/high hats)</li><br>
+                    <li>Bands will have to bring yheir own music instruments and special effects , However programmed music is not allowed</li><br>
+                    <li>Effervescence will not be held responsible for the failure of any instrument</li><br>
+                    <li>The decision of the judges will be final and binding</li><br>
+                </ol>
+        </div> -->
+
+
+				</div>
+				<div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Open Mic</h3>
+					<h4 class="content__subtitle">The Literary Event</h4>
+					<div class="content__text">“Unleash the veiled art, 
+                        let their ears be bewildered by your mesmerizing word play.”
+                        
+                        Literary Umbrella, the literary society of MAIT, brings to you an event full of pleasing poems, striking stories, raving raps and much more exclusively at the “Open Mic Event.”
+                        
+                        Here’s an opportunity to be yourself, a platform to get on and strong arm time without fearing criticism, an audience craving for unfiltered content, a charismatic start to your little hidden venture and a place where you can speak up what’s penned yet unheard!<a class="button" onclick="tas()">Learn More</a></div>
+			<!-- <div class="overlay" id="tas" onclick="off()"><br><br>
+                <p style="text-align:center;"><u>EVENT GUIDLINES</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;"  id="ordered">
+                    <li>The event will be bilingual</li><br>
+                    <li>Time limit is 3-4 minutes per speaker. </li><br>
+                    <li>Plagiarism is prohibited and shall lead to disqualification.</li><br>
+                    <li>Profanity will not be entertained.</li><br>
+                </ol>
+                <p style="text-align:center;"><u>JUDGING CRIETERIA</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Content</li><br>
+                    <li>Delivery</li><br>
+                    <li>Gestures</li><br>
+                    <li>Stage Presence</li><br>
+                    <li>Audience engagement and overall impact</li><br>
+                    <p><b>Final decision will be based upon judges' discretion.</b></p><b></b><br>
+                </ol>
+                <p style="text-align:center;"><u>CONTACT</u></p>
+                <ol style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Recorded vocals ae not allowed, only instrumental music is allowed</li><br>
+                    <li>The team are expexted to bring their own music on CD or pen drive for play</li><br>
+                    <li>In case of malfunctioning of any equipment provided , the participants will be allowed to repeat the performance from the last scene changed</li><br>
+                    <li>Accessories, costumes, props will have to be arranged bt the participants</li><br>
+                    <li>The decision of the judges  will be final and binding.</li><br>
+                </ol>
+                <p> In Case Of Queries Contact</p>
+                <ul style="text-align:justify;font-family:'Poppins', sans-serif;">
+                    <li>Mansi: +91 98111 13413</li><br>
+                    <li>Praveen: +91 91459 33260</li><br>
+                   
+                </ul>
+        </div> -->
+                </div>
+                <div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Footloose</h3>
+					<h4 class="content__subtitle"></h4>
+					<div class="content__text">
+                        "Dance like no one is watching you and let them be mesmarised" <br>
+                        Step to step,beat to beat,heart to heart-synchronising the rhyme and soul.Check out the amazing groupie performances. 
+                        
+                        .<a class="button" onclick="tas()">Learn More</a></div>
+			
+                </div>
+                <div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Mait Got Talent</h3>
+					<h4 class="content__subtitle"></h4>
+					<div class="content__text">Let's movin , let's shakein ,
+                        to give wings to your untouched dreams..
+                        Cheering audience and power packed stage,
+                        An opportunity to shine out of your cage..
+                        Welcoming you all with your endowed talent, To give your artistry a remarkable  embracement..                                
+                        Bringing you an amalgamation of a variety of 
+                        Enthralling and fun-filled flairs,
+                        Bringing you the lights filling your eyes with poised glares...
+                        
+                        MAIT is giving you an opportunity to unleash the fire in you by providing you a thrilled stage to present your flairs in front of unbiased judges and exuberant audience.<a class="button" onclick="tas()">Learn More</a></div>
+			
+                </div>
+                <div class="content__item">
+					<span class="content__number"></span>
+					<h3 class="content__title">Mr and Miss Mridang</h3>
+					<h4 class="content__subtitle"></h4>
+					<div class="content__text">"In order to be irreplaceable, it is important to be different!"
+
+                        Everybody loves standing out in the crowd. This is your chance to be a part of the headturners , with the most dazzling title of MAIT, Mr. And Ms. Mridang 2020.
+                        
+                        You have got a chance to be a part of TnM's flagship event. And groom yourself along the way to become the best, most confident version of yourself.
+                        
+                        Bring your best talents with you to leave a mark on the crowd and earn the most coveted title of the fest.<a class="button" onclick="tas()">Learn More</a></div>
+		
+				</div>
+				<button class="content__close">
+					<svg class="icon icon--longarrow">
+						<use xlink:href="#icon-longarrow"></use>
+					</svg>
+				</button>
+            </div>
+            <a href="../index.html" class="bck">Back</a>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+
+		<script type="text/javascript"></script>
+                    <script>
+                        $("a[href='#top']").click(function() {
+                        $("html, body").animate({ scrollTop: 0 }, "slow");
+                        return false;
+                        });
+                    </script>
+                    <script>
+                        function tas() {
+                            var elem = document.getElementById("tas");   
+                            var pos = 0;
+                            var id = setInterval(frame, 1);
+                            function frame() {
+                                if (pos == 900) {
+                                    clearInterval(id);
+                                } else {
+                                    pos+=18;
+                                    elem.style.display = "block"
+                                    elem.style.opacity = pos/1000;
+                                }
+                            }
+                        }
+                        function saf() {
+                            var elem = document.getElementById("saf");   
+                            var pos = 0;
+                            var id = setInterval(frame, 1);
+                            function frame() {
+                                if (pos == 900) {
+                                    clearInterval(id);
+                                } else {
+                                    pos+=18;
+                                    elem.style.display = "block"
+                                    elem.style.opacity = pos/1000;
+                                }
+                            }
+                        }
+                        function expl() {
+                            var elem = document.getElementById("expl");   
+                            var pos = 0;
+                            var id = setInterval(frame, 1);
+                            function frame() {
+                                if (pos == 900) {
+                                    clearInterval(id);
+                                } else {
+                                    pos+=18;
+                                    elem.style.display = "block"
+                                    elem.style.opacity = pos/1000;
+                                }
+                            }
+                        }
+                        function pho() {
+                            alert("Isn't the name enough (-_-)");
+                        }
+                        function man() {
+                            var elem = document.getElementById("mann");   
+                            var pos = 0;
+                            var id = setInterval(frame, 1);
+                            function frame() {
+                                if (pos == 900) {
+                                    clearInterval(id);
+                                } else {
+                                    pos+=18;
+                                    elem.style.display = "block"
+                                    elem.style.opacity = pos/1000;
+                                }
+                            }
+                        }
+        
+                        function off() {
+                            document.getElementById("tas").style.display = "none";
+                            document.getElementById("saf").style.display = "none";
+                            document.getElementById("expl").style.display = "none";
+                        }
+                        function ofm(){
+                            document.getElementById("mann").style.display = "none";
+                        }
+                    </script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	</body>
+</html>
