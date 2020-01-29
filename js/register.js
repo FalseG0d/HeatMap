@@ -20,19 +20,32 @@ const mailOptions={
 
 
 async function accessSpreadsheet(){
+
+    let details = $('form').serializeArray();
+    // console.log("hek");
+   
+
+    // console.log(row);
+
+
+
     const doc=new GoogleSpreadSheet('1nmEQWumszhnBDI6My30VVewUNexU-OQXa1CtXR6eM10');
     await promisify(doc.useServiceAccountAuth)(creds);
     const info=await promisify(doc.getInfo)();
     const sheet=info.worksheets[0];
-    const row={
-        name:'Apoorv',
-        college:'MAIT',
-        gender:'Male',
-        phone:'9990605289',
-        mail:'u.garg.10@gmail.com',
-        events:'Singing',
+    // const row={
+    //     name:'Apoorv',
+    //     college:'MAIT',
+    //     gender:'Male',
+    //     phone:'9990605289',
+    //     mail:'u.garg.10@gmail.com',
+    //     events:'Singing',
 
-    }
+    // }
+    const row = {};
+    details.forEach(el => {
+        row[el.name] = el.value;
+    });
     await promisify(sheet.addRow)(row);
     
 
